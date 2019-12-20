@@ -1,0 +1,1122 @@
+*
+{
+    box-sizing: border-box;
+}
+button:focus,
+.btn:focus
+{
+    box-shadow: none;
+    outline: none;
+}
+.font-weight-500
+{
+    font-weight: 500;
+}
+.font-weight-600
+{
+    font-weight: 600;
+}
+.font-weight-700
+{
+    font-weight: 700;
+}
+
+
+/*Start Navbar*/
+header
+{
+    /*
+    min-height: 100vh;
+    */
+    height: 100vh;
+    /*
+    background-color: #444;
+    background: url("../images/background.png") no-repeat center center;
+    background-size: cover;
+    */
+    position: relative;
+}
+header .bakground-imgs
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header .bakground-imgs .back_img
+{
+    object-fit: cover;
+    transition: .3s;
+    display: none;
+}
+header .bakground-imgs .back_img.active
+{
+    display: block;
+}
+header .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1;
+}
+header .navbar
+{
+    background-color: rgba(20, 52, 84, 0.8);
+    z-index: 99;
+}
+header .navbar-toggler .navbar-toggler-icon
+{
+    display: none;
+}
+header .navbar-toggler svg
+{
+    color: #fff;
+    font-size: 25px;
+}
+header .navbar .navbar-brand img
+{
+    width:  100px;
+}
+header .navbar .navbar-nav .nav-item .nav-link
+{
+    color: #fff;
+}
+/*End Navbar*/
+
+/*Start Main Content*/
+.main-content .content
+{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    height: 80%;
+    overflow: hidden;
+}
+/*Content*/
+/*
+.main-content .content .content-day
+{
+    display: none;
+}
+.main-content .content .content-day.active
+{
+    display: flex;
+}
+*/
+/*Left Box*/
+.main-content .content .content-day
+{
+    display: none;
+}
+.main-content .content .content-day.active
+{
+    display: flex;
+}
+.main-content .content .content-day .left-box
+{
+    width: 85%;
+    position: relative;
+    height: 100%;
+}
+.main-content .content .content-day .left-box .box-container
+{
+    /*
+    width: 420px;
+    */
+    width: 45%;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+    border-radius: 0 .7rem .7rem 0;
+    position: absolute;
+    left: 0;
+    transition: .3s;
+    overflow: hidden;
+    justify-content: center;
+    /*
+    background-color: rgba(0, 109, 217, .67);
+    */
+}
+.main-content .content .content-day .left-box .box-container.active
+{
+    transform: translateY(-50%) translateX(0);
+}
+.main-content .content .content-day .left-box .box-container .box-head
+{
+    background-color: #e1ae74;
+    /*
+    height: 40px;
+    height: 10%;
+    flex-grow: 1;
+    */
+    flex-shrink: 0;
+}
+.main-content .content .content-day .left-box .box-container .box-head .title
+{
+    color: #fff;
+    font-size: 16px;
+}
+.main-content .content .content-day .left-box .box-container .box-head .back-btn
+{
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(0, #00bfff, #0059b2);
+    border-bottom-left-radius: .8rem;
+    height: 100%;
+}
+.main-content .content .content-day .left-box .box-container .box-head .back-btn svg
+{
+    color: #e1ae74;
+    font-size: 15px;
+}
+.main-content .content .content-day .left-box .box-container .box-content
+{
+    /*
+    height: 100%;
+    */
+    max-height: 90%;
+    overflow-x: hidden;
+}
+
+/*overview*/
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .owl-carousel
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .owl-carousel .owl-stage
+{
+    display: flex;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .owl-carousel .owl-stage .owl_item
+{
+    height: 100%;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .owl-carousel .owl-stage .owl_item.selected
+{
+    border: 5px solid #efaa41;
+}
+.main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-next,
+.main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-prev
+{
+    font-size: 39px;
+    position: absolute;
+    top: 0;
+}
+.main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-prev
+{
+    left: 20px;
+}
+.main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-next
+{
+    right: 20px;
+}
+.main-content .content .content-day .left-box .box-container .overview-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+
+.main-content .content .content-day .left-box .box-container .overview-box-content .text
+{
+    font-size: 15px;
+}
+.main-content .content .content-day .left-box .box-container .overview-box-content .read-more-btn
+{
+    background: url("../images/day-by-day/read_more_btn.png") no-repeat center center;
+    background-size: contain;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/*accommodation*/
+.main-content .content .content-day .left-box .box-container .accommodation-box-content
+{
+    background-color: #fff;
+}
+.main-content .content .content-day .left-box .box-container .accommodation-box-content .text
+{
+    color: #333;
+    font-size: 16px;
+}
+.main-content .content .content-day .left-box .box-container .accommodation-box-content .stars-rating svg
+{
+    color: #ff9326;
+    font-size: 16px;
+}
+.main-content .content .content-day .left-box .box-container .accommodation-box-content .trip-adv
+{
+    width: 120px;
+}
+
+
+
+/*destination*/
+.main-content .content .content-day .left-box .box-container .destination-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day .left-box .box-container .destination-box-content .dist-title
+{
+    font-size: 18px;
+    color: #e1ae74;
+    background-color: #143454;
+}
+.main-content .content .content-day .left-box .box-container .destination-box-content .read-more-btn
+{
+    background: url("../images/day-by-day/read_more_btn.png") no-repeat center center;
+    background-size: contain;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*excursions*/
+.main-content .content .content-day .left-box .box-container .excursions-box-content
+{
+    background-color: rgba(0, 109, 217, .67);   
+}
+.main-content .content .content-day .left-box .box-container .excursions-box-content .box_item
+{
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.main-content .content .content-day .left-box .box-container .excursions-box-content  .box_item .card-body
+{
+    background-color: #143454;
+}
+.main-content .content .content-day .left-box .box-container .excursions-box-content  .box_item .card-body .title
+{
+    font-size: 18px;
+    color: #e1ae74;
+}
+.main-content .content .content-day .left-box .box-container .excursions-box-content  .box_item .card-body .title span
+{
+    color: #fff;
+    font-size: 16px;
+}
+.main-content .content .content-day .left-box .box-container .excursions-box-content  .box_item .card-body .details-btn
+{
+    color: #fff;
+    background-color: #e1ae74;
+    border-radius: .5rem;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    height: 100%;
+    position: relative;
+    /*
+    position:relative;
+    height:0;
+    */
+}
+.map-responsive iframe{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+
+/*flight-info-box-content*/
+.main-content .content .content-day .left-box .box-container .flight-info-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card
+{
+    border-radius: .5rem;
+    overflow: hidden;
+}   
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-head
+{
+    background-color: #143454;
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-head .acc-title
+{
+    font-size: 16px;
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-head svg
+{
+    color: #e1ae74;
+    cursor: pointer;
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body
+{
+    background-color: #e8eff6;
+    color: #222;
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .box
+{
+    
+}
+.main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .card-title
+{
+    color: #222;
+    font-size: 18px;
+}
+
+
+
+/*Right Box*/
+.main-content .content .content-day .right-box
+{
+    flex-grow: 1;
+}
+.main-content .content .content-day .right-box .list-items .list_item
+{
+    color: #fff;
+    background-color: rgba(225, 174, 116, 0.70);
+    font-size: 17px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: right;
+}
+.main-content .content .content-day .right-box .list-items .list_item.selected
+{
+    background-color: rgba(20, 52, 84, 0.8);
+}
+
+@media (min-width: 1750px) {
+    header .navbar .navbar-brand img
+    {
+        width: 7vmax
+    }
+    header .navbar .navbar-nav .nav-item .nav-link
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .right-box .list-items .list_item
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .box-head
+    {
+        height: 70px;
+    }
+    .main-content .content .content-day .left-box .box-container .box-head .title,
+    .main-content .content .content-day .left-box .box-container .box-head .back-btn,
+    .main-content .content .content-day .left-box .box-container .box-head .back-btn svg
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .overview-box-content .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .overview-box-content .read-more-btn
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .accommodation-box-content .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .accommodation-box-content .stars-rating svg
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .accommodation-box-content .trip-adv
+    {
+        width: 7vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .destination-box-content .dist-title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .destination-box-content .dist-text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .destination-box-content .read-more-btn
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .excursions-box-content .box_item .card-body .title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .excursions-box-content .box_item .card-body .title span
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .excursions-box-content .box_item .card-body .details-btn
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-head .acc-title
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .card-title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .card-text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .table th,
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-body .table td
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day .left-box .box-container .flight-info-box-content .cards-container .card .card-head svg
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-next,
+    .main-content .content .content-day.main-overview .left-box .owl-carousel .owl-nav button.owl-prev
+    {
+        font-size: 3vmax;
+    }
+}
+@media (max-width: 1199px) {
+    .main-content .content .content-day .left-box .box-container
+    {
+        height: 100%;
+        width: 420px;
+    }
+}
+@media (max-width: 991px) {
+    /*
+    .main-content .content .content-day .left-box
+    {
+        height: 100%;
+    }
+    */
+    .main-content .content .content-day .left-box .box-container
+    {
+    }
+    
+}
+@media (max-width: 767px) {
+    .main-content .content .content-day .right-box
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -100%;
+        transition: .3s;
+    }
+    .main-content .content .content-day .right-box.active
+    {
+        right: 0;
+    }
+    
+    
+    
+    /*
+    .main-content .content .content-day
+    {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+    }
+    .main-content .content .content-day .left-box
+    {
+        left: 0;
+        
+    }
+    .main-content .content .content-day .right-box
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -100%;
+        transition: .3s;
+    }
+    .main-content .content .content-day .right-box.active
+    {
+        right: 0;
+    }
+    .main-content .content .content-day .left-box .box-container
+    {
+        width: 70%;
+        margin: auto;
+        border-radius: .7rem;
+    }
+    */
+
+}
+@media (max-width: 577px) {
+    
+    .main-content .content .content-day .left-box
+    {
+        width: 100%;
+    }
+    .main-content .content .content-day .left-box .box-container
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+/*Tabs*/
+.main-content .custom-tabs
+{
+    height: auto;
+    /*
+    height: 20%;
+    */
+}
+.main-content .custom-tabs .swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #143454;
+}
+
+.main-content .custom-tabs .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.main-content .custom-tabs .swiper-button-prev,
+.main-content .custom-tabs .swiper-button-next
+{
+    position: static;
+    height: auto;
+    margin: 0;
+    background-color: #143454;
+    box-shadow: 0 -10px 20px -3px #222;
+}
+.main-content .custom-tabs .swiper-button-prev::after,
+.main-content .custom-tabs .swiper-button-next::after
+{
+    font-size: 16px;
+    font-weight: 900;
+    color: #e1ae74;
+}
+.main-content .custom-tabs .swiper-slide .tab-item .thumb-container
+{
+    position: relative;
+    height: 70%;
+}
+.main-content .custom-tabs .swiper-slide .tab-item .thumb-container img
+{
+    opacity: .5;
+}
+.main-content .custom-tabs .swiper-slide.selected .tab-item .thumb-container img
+{
+    opacity: 1;
+}
+.main-content .custom-tabs .swiper-slide .tab-item .thumb-container .title
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+.main-content .custom-tabs .swiper-slide .tab-item .info
+{
+    background-color: #fff;
+    height: 30%;
+}
+.main-content .custom-tabs .swiper-slide .tab-item .info .text
+{
+    color: #133352;
+    font-size: 13px;
+}
+.main-content .custom-tabs .swiper-slide.selected .tab-item .info
+{
+    background-color: #e1ae74;
+}
+.main-content .custom-tabs .swiper-slide.selected .tab-item .info .text
+{
+    color: #fff;
+}
+@media (min-width: 1750px) {
+    .main-content .custom-tabs .swiper-slide .tab-item .thumb-container .title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .custom-tabs .swiper-slide .tab-item .info .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .custom-tabs .swiper-button-prev, .main-content .custom-tabs .swiper-button-next
+    {
+        width: 50px;
+    }
+}
+/*End Main Content*/
+@media (min-height: 200px) and (max-height: 440px) {
+    header .navbar
+    {
+        padding: 0;
+    }
+    header .navbar .navbar-brand img
+    {
+        width: 60px;
+    }
+    .main-content .content .content-day .right-box .right-box_scroll
+    {
+        height: 130px;
+        background-color: rgba(0,0,0,.6);
+    }
+    .main-content .content .content-day .right-box .right-box_scroll .list-items
+    {
+        padding-right: 5px !important;
+    }
+    .main-content .content .content-day .right-box .list-items .list_item
+    {
+        margin-bottom: 5px !important;
+        font-size: 14px;
+    }
+    .main-content .content .content-day .left-box
+    {
+        height: 100%;
+    }
+    .main-content .content .content-day .left-box .box-container .box-content
+    {
+        max-height: auto;
+        height: 90%;
+    }
+    .main-content .custom-tabs .swiper-slide .tab-item .thumb-container
+    {
+        height: 60px;
+    }
+    .main-content .custom-tabs .swiper-slide .tab-item .info
+    {
+        padding: 0 !important;
+    }
+    .main-content .custom-tabs .swiper-slide .tab-item .thumb-container .title
+    {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Main Overview*/
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .image
+{
+    position: relative;
+    overflow: hidden;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .box-content .image .lg-slider
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-content .content .content-day.main-overview .left-box .box-container .box-content hr
+{
+    background-color: #fff;
+}
+/*introductions*/
+.main-content .content .content-day.main-overview .left-box .box-container
+{
+    height: 100%;
+    justify-content: center;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content
+{
+    height: 100%;
+    /*
+    background-color: rgba(0, 109, 217, .67);
+    */
+    overflow: hidden;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .image
+{
+    /*
+    height: 40%;
+    */
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .image img
+{
+    object-fit: cover;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .card-body
+{
+    background-color: rgba(0, 109, 217, .67);
+    flex-grow: 0;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .card-title
+{
+    font-size: 20px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .card-text
+{
+    font-size: 15px;
+}
+
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .nights-num,
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .price-info .price
+{
+    font-size: 18px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .price-info .from
+{
+    font-size: 15px;
+}
+
+/*Overview*/
+.main-content .content .content-day.main-overview .left-box .box-container .overview-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .overview-box-content .text
+{
+    font-size: 15px;
+}
+
+/*highlights*/
+.main-content .content .content-day.main-overview .left-box .box-container .highlights-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .highlights-box-content .text
+{
+    font-size: 15px;
+}
+
+/*additional-info*/
+.main-content .content .content-day.main-overview .left-box .box-container .additional-info-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .additional-info-box-content .title
+{
+    font-size: 17px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .additional-info-box-content .text
+{
+    font-size: 15px;
+}
+
+/*pricing*/
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content
+{
+    background-color: rgba(0, 109, 217, .67);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card
+{
+    border-radius: 1rem;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header
+{
+    background-color: #143454;
+    overflow: hidden;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header .title
+{
+    color: #212121;
+    font-size: 16px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header .title
+{
+    font-size: 13px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header svg
+{
+    color: #e1ae74;
+}
+
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card .card-body
+{
+    display: none;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body
+{
+    background-color: #e8eff6;
+    color: #212121;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .day-num-name
+{
+    background-color: #e1ae74;
+    border-radius: .5rem;
+    line-height: 1;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .day-num-name .day-num
+{
+    font-size: 18px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .text
+{
+    color: #545454;
+    text-align: center;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .sold-out .text
+{
+    font-size: 15px;
+    color: #ddd;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content hr
+{
+    background-color: #ddd;
+    margin: .5rem 0;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .price-info .from
+{
+    font-size: 13px;
+    color: #ccc;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .price-info .price
+{
+    font-size: 18px;
+    color: #545454;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-btn
+{
+    border-radius: .4rem;
+    border: 1px solid #e1ae74;
+    background-color: transparent;
+    font-size: 14px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .all-itinerary-content
+{
+    background-color: rgba(0, 109, 217, 1);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content
+{
+    /*
+    display: none;
+    */
+    background: linear-gradient(0, #e1ae74, #fff);
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .it-title
+{
+    color: #133353;
+    font-size: 18px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .it-text
+{
+    font-size: 15px;
+    color: #555;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .main-price-info
+{
+    font-size: 18px;
+    color: #545454;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .main-price-info span
+{
+    font-size: 13px;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .package-price-info
+{
+    font-size: 16px;
+    color: #545454;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .package-price-info .hint
+{
+    font-size: 13px;
+    color: #e1ae74;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn
+{
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 2px solid #e1ae74;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn svg
+{
+    color: #fff;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn.selected
+{
+    background-color: #0083d2;
+    border: 2px solid #0083d2;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn .select-txt
+{
+    display: block;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn .selected-txt
+{
+    display: none;
+    color: #fff;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn.selected .select-txt
+{
+    display: none;
+}
+.main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn.selected .selected-txt
+{
+    display: flex;
+}
+@media (min-width: 1750px) {
+
+    .main-content .content .content-day.main-overview .right-box .list-items .list_item
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .box-head .title
+    {
+        font-size: 1vmax;   
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .box-head .back-btn
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .box-head .back-btn svg
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .card-title
+    {
+        font-size: 1.3vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .card-text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .price-info .from
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .nights-num, .main-content .content .content-day.main-overview .left-box .box-container .introductions-box-content .price-info .price
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .overview-box-content .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .highlights-box-content .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .additional-info-box-content .title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .additional-info-box-content .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header .year-num,
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header .year-name,
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-header svg
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .title
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .sold-out .text,
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .day-num-name .day-num
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .card-body .day-num-name .day-name
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .price-info .from
+    {
+        font-size: .8vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .price-info .price
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-btn
+    {
+        font-size: .8vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .it-title
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .it-text
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .main-price-info
+    {
+        font-size: 1.1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .itinerary-content .main-price-info span
+    {
+        font-size: .8vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .package-price-info
+    {
+        font-size: 1vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .package-price-info .hint
+    {
+        font-size: .8vmax;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .pricing-box-content .itinerary-container .select-package-btn
+    {
+        font-size: 1vmax;
+    }
+}
+@media (min-width: 1440px){
+    /*
+    .main-content .content .content-day.main-overview .left-box .box-container
+    {
+        height: auto;
+        max-height: 90%;
+    }
+    */
+}
+@media (max-width: 577px) {
+    
+    .main-content .content .content-day.main-overview .left-box
+    {
+        width: 100%;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container
+    {
+        width: 100%;
+    }
+}
+/*End Main Content*/
+@media (min-height: 200px) and (max-height: 440px) {
+
+    .main-content .content .content-day.main-overview .left-box
+    {
+        height: 100%;
+    }
+    .main-content .content .content-day.main-overview .left-box .box-container .box-content
+    {
+        max-height: auto;
+        height: 90%;
+    }
+}
+
+
